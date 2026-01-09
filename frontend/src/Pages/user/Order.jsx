@@ -50,7 +50,7 @@ function Order() {
 
   try {
     // ✅ Save the order in the backend
-    await axios.post("http://localhost:5000/api/orders", {
+    await axios.post("https://animal-feed-products-sales-website.onrender.com", {
       name: formData.name,
       phone: formData.phone,
       email: formData.email,
