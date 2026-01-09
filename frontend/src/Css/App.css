@@ -1,0 +1,186 @@
+
+/* Navbar Styling */
+.navbar {
+  position: absolute;  /* Keep navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100%;  /* Full width */
+  background-color: #4574a7;
+  padding: 15px;
+  display: flex;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+  z-index: 1000; /* Ensure it stays above other elements */
+}
+
+/* Container */
+.navbar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+
+}
+
+/* Logo */
+.logo {
+  width: 80px;
+  height: 70px;
+}
+
+/* Navbar Title */
+.navbar-brand {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Navigation Links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+/* Navigation Link Styling */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+  padding: 5px 10px;
+  background-color: whitesmoke;
+  border-radius: 6px;
+  color: black;
+  font-weight: 500;
+  border: none;
+  
+}
+
+.nav-link:hover {
+  text-decoration: none;
+  color:white;
+  background-color: #333;
+}
+
+/* Hamburger Menu (Mobile) */
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Profile Section */
+.profile-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Profile Icon */
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white url('default-profile.png') center/cover no-repeat;
+  cursor: pointer;
+  border: 2px solid #fff;
+  
+}
+
+/* Profile Dropdown */
+.profile-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background: white;
+  width: 180px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Username */
+.profile-username {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* Logout Button */
+.logout-btn {
+  width: 100%;
+  padding: 8px;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.logout-btn:hover {
+  background: darkred;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Show hamburger menu */
+  .hamburger-menu {
+    display: block;
+  }
+  /* Navbar Title */
+.navbar-brand {
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+  /* Hide Navbar Links by default */
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 100%;
+    background: #4574a7;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+  }
+
+  /* Show menu when active */
+  .navbar-links.active {
+    display: flex;
+  }
+
+  /* Responsive Nav Links */
+  .nav-link {
+    padding: 5px;
+    text-align: center;
+    display: block;
+  
+  }
+
+  /* Adjust Profile Dropdown for Mobile */
+  .profile-dropdown {
+    top: 55px;
+    right: 10px;
+  }
+  
+  /*Home styling*/
+  .home-container {
+  text-align: center;
+  
+  }
+}
