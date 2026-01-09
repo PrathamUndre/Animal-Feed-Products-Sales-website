@@ -14,7 +14,7 @@ import AdminLogin from "./Pages/Admin/AdminLogin";
 import AdminDashboard from "./Pages/Admin/AdminDashboard";
 import ManageProducts from "./Pages/Admin/ManageProducts";
 import ManageOrders from "./Pages/Admin/ManageOrders";
-import AdminNavbar from "./components/AdminNavbar";
+import AdminNavbar from "./Components/AdminNavbar";
 
 const API_BASE_URL = "https://animal-feed-products-sales-website.onrender.com"; // Change this to your backend URL
 
