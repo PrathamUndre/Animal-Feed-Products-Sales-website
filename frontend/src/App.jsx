@@ -2,18 +2,18 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import axios from "axios";
 
-import Signup from "./Pages/User/Signup";
-import Login from "./Pages/User/Login";
-import Home from "./Pages/User/Home";
-import Products from "./Pages/User/Products";
+import Signup from "./Pages/user/Signup";
+import Login from "./Pages/user/Login";
+import Home from "./Pages/user/Home";
+import Products from "./Pages/user/Products";
 import Navbar from "./Components/Navbar";
-import Order from "./Pages/User/Order";
+import Order from "./Pages/user/Order";
 
 import "./Css/App.css";
-import AdminLogin from "./pages/Admin/AdminLogin";
-import AdminDashboard from "./pages/Admin/AdminDashboard";
-import ManageProducts from "./pages/Admin/ManageProducts";
-import ManageOrders from "./pages/Admin/ManageOrders";
+import AdminLogin from "./Pages/Admin/AdminLogin";
+import AdminDashboard from "./Pages/Admin/AdminDashboard";
+import ManageProducts from "./Pages/Admin/ManageProducts";
+import ManageOrders from "./Pages/Admin/ManageOrders";
 import AdminNavbar from "./components/AdminNavbar";
 
 const API_BASE_URL = "https://animal-feed-products-sales-website.onrender.com"; // Change this to your backend URL
