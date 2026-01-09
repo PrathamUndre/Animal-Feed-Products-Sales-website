@@ -16,7 +16,7 @@ import ManageProducts from "./pages/Admin/ManageProducts";
 import ManageOrders from "./pages/Admin/ManageOrders";
 import AdminNavbar from "./components/AdminNavbar";
 
-const API_BASE_URL = "http://localhost:5000/api"; // Change this to your backend URL
+const API_BASE_URL = "https://animal-feed-products-sales-website.onrender.com"; // Change this to your backend URL
 
 const ProtectedRoute = ({ element }) => {
   const token = localStorage.getItem("token"); // Get JWT token from localStorage
