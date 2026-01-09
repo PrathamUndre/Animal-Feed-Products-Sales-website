@@ -14,7 +14,7 @@ const Signup = ({ setUser }) => {
   const handleSignup = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://animal-feed-products-sales-website.onrender.com", { 
+      const res = await axios.post("http://localhost:5000/api/auth/signup", { 
         username, 
         password 
       });

@@ -15,7 +15,7 @@ const Login = ({ setUser }) => {
     e.preventDefault();
   
   try {
-    const res = await axios.post("https://animal-feed-products-sales-website.onrender.com", { username, password });
+    const res = await axios.post("http://localhost:5000/api/auth/login", { username, password });
     localStorage.setItem("token", res.data.token);
     setUser(res.data.username);  // Set user in state
     navigate("/");  // Redirect to home

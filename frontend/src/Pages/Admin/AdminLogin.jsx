@@ -12,7 +12,7 @@ const AdminLogin = ({ setAdmin }) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("https://animal-feed-products-sales-website.onrender.com", { username, password });
+      const response = await axios.post("http://localhost:5000/api/auth/login", { username, password });
       if (response.data.token) {
         localStorage.setItem("admin", JSON.stringify(response.data));
         setAdmin(response.data);
